@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>We help you achieve your goals!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>This is a simple landing page created for demonstration purposes.</p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>High-quality leads for your business</li>
+                <li>Custom marketing strategies</li>
+                <li>Expert advice and support</li>
+            </ul>
+        </section>
+
+        <a href="thankyou.html" class="cta-button">Get Started Now</a>
+    </main>
+
+    <!-- Netlify CMS -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", (user) => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.reload();
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
